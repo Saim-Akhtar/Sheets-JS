@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sheet JS practise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script lang="javascript" src="FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.5/xlsx.full.min.js"></script>
+
+    <!-- This CDN is also working -->
+    <!-- <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script> -->
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-center py-4">
+      <h1 class="text-white text-center">📃 Sheet JS</h1>
+    </header>
+    <div class="container mt-5 text-center">
+      <h2 class="text-center my-4">
+        A library that convert your excel file into HTML table
+      </h2>
+      <input type="file" id="fileUpload" />
+      <label for="fileUpload" class="btn btn-primary btn-lg"
+        >Upload an Excel Sheet</label
+      >
+      <div style="margin: 40px 0px"></div>
+      <div>
+        Made with 💞 by:
+        <a
+          href="https://github.com/Saim-Akhtar"
+          class="text-white"
+          style="font-weight: bold"
+          >Saim Akhter</a
+        >
+      </div>
+      <div style="margin: 40px 0px"></div>
+
+      <table id="table" class="table text-white"></table>
+    </div>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./lib/scripts/converter.js"></script>
+</html>
