@@ -1,0 +1,14 @@
+body {
+  background: rgb(36, 35, 35);
+  font-family: 'Montserrat', sans-serif;
+  color: #ffff;
+}
+
+#fileUpload {
+  display: none;
+}
+#labelFile {
+  cursor: pointer;
+  margin: 0% 47%;
+  display: inline-block !important;
+}
